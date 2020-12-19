@@ -91,6 +91,6 @@ const rollTheDice = (n, sides, take = n) => {
     .sort((a, b) => b - a)
     .slice(0, take)
     .reduce((sum, i) => sum + i, 0);
-
   return rolls;
 }
+
