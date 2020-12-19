@@ -83,7 +83,6 @@ const character = async data => {
     avatar,
   };
 }
-
 const rollTheDice = (n, sides, take = n) => {
   const rolls = Array(n)
     .fill(0)
@@ -91,7 +90,6 @@ const rollTheDice = (n, sides, take = n) => {
     .sort((a, b) => b - a)
     .slice(0, take)
     .reduce((sum, i) => sum + i, 0);
-  
     return rolls;
 }
 
