@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <script src="main.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h2> Пользователь</h2>
+	<form name="character" enctype="multipart/form-data">
+	<table border="1">
+	  <tr>	
+	    <td>
+			<label for="email">
+				Email
+			</label>
+		 </td>
+	    <td>
+			<input type="email" name="email" id="email" required />	
+		</td>
+	  </tr>
+	  <tr>
+	    <td>
+			<label for="password">
+				Пароль
+			</label>
+		</td>
+	    <td>
+	    	<input type="password" id="password" name="password" required/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td><label for="avatar">Аватар</label></td>
+	    <td>
+	    	<input type="file" name="avatar" id="avatar" required/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td><label for="dateOfBirth">Дата рождения</label></td>
+	    <td>
+	    	<input type="date" name="dateOfBirth"  id="dateOfBirth" required/>
+	    </td>
+	  </tr>
+	</table>
+	<h2>Персонаж</h2>
+	<table border="1">
+	  <tr>
+	    <td>
+	    	<label for="name">
+	    		Имя
+	    	</label>
+	    </td>
+	    <td>
+	    	<input type="firstname" name="name" id="name" required/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>Планета</td>
+	    <td>
+	    	<label>
+	    		<input type="radio" name="planet" value="coruscant" required/>coruscant
+	    	</label>
+	    	<label>
+	    		<input type="radio" name="planet" value="cybetron" required/>cybetron
+	    	</label>
+	    	<label>
+	    		<input type="radio" name="planet" value="gallifrey" required/>gallifrey
+	    	</label>
+	    </td>
+	  </tr>
+
+	  <tr>
+	    <td>Опыт</td>
+	    <td>
+	    	<label>
+	    		<input type="radio" name="background" value="pilot" required/>pilot
+	    	</label>
+	    	<label>
+	    		<input type="radio" name="background" value="miner" required/>miner
+	    	</label>
+	    	<label>
+	    		<input type="radio" name="background" value="merhant" required/>merhant
+	    	</label>   	
+	    </td>
+	  </tr>
+	  <tr>
+	    <td><label for="age">Возраст</label></td>
+	    <td>
+	    	<input type="number" name="age" id="age" min="1" max="100" required/>
+	    </td>
+	  </tr>
+	  <tr>
+	    <td>Характеристики</td>
+	    <td>
+	      <ul>
+	        <li><label>Интеллект: <input type="number" name="intelligence" min="1" max="20" disabled/></label></li>
+	        <li><label>Телосложение: <input type="number" name="constitution" min="1" max="20" disabled/></label></li>
+	        <li><label>Харизма: <input type="number" name="charisma" min="1" max="20" disabled /></label></li>
+	      </ul>
+	      <button type="button" id="roll">Generate</button>
+	    </td>
+	  </tr>
+	  
+	  <tr>
+	    <td><label for="pet">Питомец</label></td>
+	    <td>
+			<select id="pet">
+				<option value="">---</option>
+				<optgroup label="Роботы">
+					<option>Киборг</option>
+					<option>Робот</option>
+					<option>Кибернет</option>
+				</optgroup>
+				<optgroup label="Живые">
+					<option>Собака</option>
+					<option>Попугай</option>
+					<option>Кошка</option>
+				</optgroup>
+			</select>
+		</td>
+	  </tr>
+	  
+	  <tr>
+	    <td>Инвентарь</td>
+	    <td>
+			<label><input type="checkbox" name="inventory-pickaxe" value="pickaxe"/>Кирка</label>
+			<label><input type="checkbox" name="inventory-sword" value="sword"/>Меч</label>
+			<label><input type="checkbox" name="inventory-pistolet" value="pistolet"/>Пистолет</label>
+			<label><input type="checkbox" name="inventory-rifle" value="rifle"/>Автомат</label>
+		</td>
+	  </tr>
+
+	  <tr>
+	    <td><label for="color">Цвет корабля</label></td>
+	    <td>
+			<input type="color" name="shipColor" id="color" required/>
+		</td>
+	  </tr>
+
+	  <tr>
+	    <td><label for="description">Описание</label></td>
+	    <td>	
+			<input type="text" name="description" id="description"/>
+	    </td>
+	  </tr>
+	</table>
+		 <button type="submit">
+		 	Отправить
+		 </button>
+	 </form>
+  </body>
+</html>
