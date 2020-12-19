@@ -1,0 +1,32 @@
+/*Элементы*/
+div{
+	background-color: red;
+	color: purple;
+}
+/*Классы*/
+.ein{
+	background-color: blue;
+}
+.zwei{
+	background-color: yellow;
+}
+.drei{
+	background-color: chartreuse;
+}
+.vier{
+	background-color: cornflowerblue;
+}
+
+/*Айди*/
+#one{
+	background-color: green;
+}
+#two{
+	color: brown;
+}
+#three{
+	color: blue;
+}
+div div{
+	background-color: black;
+}
