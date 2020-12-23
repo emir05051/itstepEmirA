@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    color:rgb(255, 255, 255)
+    /* text-align: center; */
+}
+
+body{
+    background-image: url(https://img1.akspic.ru/image/80651-temnota-uzor-zelenyj-chernyy-haker-1920x1080.jpg);
+}
+
+table, tr, td{
+    border: 2px ridge thistle;
+    margin: 2px;
+    /* background-color: lawngreen; */
+}
+
+input{
+    background-color: gainsboro;
+    color: rgb(247, 0, 255);
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    color: rgb(0, 0, 0);
+    width: 100px;
+}
+
+select, option{
+    color: navy;
+}
+
+optgroup{
+    color: blue;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-style: oblique;
+}
+
+pre{
+    color: rgb(255, 0, 0);
+    display: inline-block;
+    background-color: rgb(0, 174, 255);
+}
+
+/* ID */
+
+#user, #character{
+    display: inline;
+    background-color: rgb(27, 163, 204);
+    margin-left: 200px;
+}
+
+#roll{
+    width: 100%;
+    background-color: darkgreen;
+    color: chartreuse;
+    padding: 10;
+}
+
+#roll:focus{
+    width: 100%;
+    background-color: rgb(255, 0, 0);
+    color: black;
+    padding: 10;
+    font-size: 20;
+}
+/* CLASS */
+.main{
+    background-color: maroon;
+    display: inline-block;
+    margin: 150 10 10 200;
+    padding: 3%;
+    width: 50%;**
+    height: 600px;
+}
+
+.email{
+    background-color: darksalmon;
+    padding: 10px;
+    width: 50%;
+}
+
+.password{
+    background-color: darkslateblue;
+    padding: 10px;
+    width: 50%;
+}
+
+.ava{
+    background-color: goldenrod;
+    padding: 5px;
+    width: 50%;
+}
+
+.date{
+    background-color: indianred;
+    padding: 5px;
+    width: 50%;
+}
+
+.name{
+    background-color: palegreen;
+    padding: 5px;
+    width: 50%;
+}
+
+.planet{
+    background-color: indianred;
+    padding: 5px;
+    width: 50%;
+}
+
+.exp{
+    background-color: red;
+}
+
+.age{
+    background-color: royalblue;
+    padding: 5px;
+}
+
+.stats{
+    background-color: sienna;
+    padding: 5px;
+}
+
+.pet, .inv, .color, .description{
+    background-color: teal;
+    text-align: center;
+}
