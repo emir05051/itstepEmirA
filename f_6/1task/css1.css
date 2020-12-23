@@ -1,0 +1,24 @@
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        height: 100%;
+        /* Квадрат в квадрате */
+        body {
+            padding: 20px;
+        }
+        .main,
+        .sub {
+            height: 100%;
+            padding: 20px;
+        }
+        .main {
+            background-color: indigo;
+        }
+        .sub {
+            background-color: orange;
+        }
