@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.div1,
+.div2,
+.div3 {
+    height: 300px;
+}
+
+.div1 {
+    background-color: indianred;
+}
+
+.div2 {
+    background-color: red;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.div3 {
+    background-color: blueviolet;
+}
+
+.item {
+    background-color: seagreen;
+    border: 2px solid black;
+    width: 40%;
+}
