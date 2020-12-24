@@ -1,29 +1,28 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100%;
-    width: 100%;
-}
-
 body {
-    background-color: whitesmoke;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+    background-color: skyblue;
 }
 
-.text {
-    background-color: yellowgreen;
-    color: black;
-    min-width: 200px;
-    max-width: 500px;
-    max-height: 500px;
-    min-height: 200px;
-    margin: auto;
-    padding: 10px;
-    overflow: auto;
-    overflow-wrap: break-word;
+.main {
+    margin-top: 10%;
+}
+
+.main>div {
+    margin: 0 auto;
+    background-color: snow;
+    border-radius: 50%;
+}
+
+.one {
+    width: 10%;
+    padding-bottom: 10%;
+}
+
+.two {
+    width: 20%;
+    padding-bottom: 30%;
+}
+
+.three {
+    width: 30%;
+    padding-bottom: 30%;
 }

@@ -1,24 +1,34 @@
-        * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-    
-    html,
-    body {
-        height: 100%;
-        /* Квадрат в квадрате */
-        body {
-            padding: 20px;
-        }
-        .main,
-        .sub {
-            height: 100%;
-            padding: 20px;
-        }
-        .main {
-            background-color: indigo;
-        }
-        .sub {
-            background-color: orange;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.one,
+.two,
+.three {
+    background-color: red;
+}
+
+.one {
+    margin: auto;
+    width: 10%;
+    height: 10%;
+}
+
+.two {
+    margin: auto;
+    width: 20%;
+    height: 20%;
+}
+
+.three {
+    margin: auto;
+    width: 30%;
+    height: 30%;
+}
