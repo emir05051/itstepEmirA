@@ -1,0 +1,116 @@
+/*
+  DOM
+    window / viewport
+    html - Documnet
+    body - body
+
+*/
+/*
+* 1. #id > .class > tag
+* 2. Чем позже в коде, тем важнее
+* 3. tag.class > tag
+     tag.class > .class
+     .class.class > .class
+*/
+/*
+* {
+
+  display; inline, block, inline-block
+
+  position;
+
+  top, bottom, right, left,
+
+  width
+  height
+
+  min-width
+  min-height: ;
+  max-width: ;
+  max-height: ;
+
+  margin;
+  padding: ;
+
+  overflow;
+
+  border
+
+  box-sizing: ;
+
+} */
+
+/*
+height
+> min-height
+> max-height
+*/
+
+html {
+  /* height: 100%; */
+  /* height: -webkit-fill-available; */
+}
+
+body {
+  /* mheight: 100%; */
+  margin: 0;
+
+  padding: 50px;
+  /* border: 1px solid red; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* viewport height */
+.container {
+  margin: -20px auto;
+  /* border: 1px solid red;s */
+  /* padding: 1px; */
+  /* padding: 20px; */
+}
+
+.wrap {
+  background-color: coral;
+}
+
+.a {
+  border: 2px solid red;
+}
+
+.child {
+  margin: -10%;
+  /* margin: 20px; */
+  background-color: cornflowerblue;
+}
+
+
+.item {
+  /* margin: 20px */
+  padding: 20px 0;
+}
+/* 
+.item:first-child {
+  padding-top: 0;
+}
+.item:last-child {
+  padding-bottom: 0;
+} */
+
+
+.item > div {
+  background-color: indigo;
+  padding: 10px;
+}
+
+/*
+.container > div {
+  height: 10%;
+} */
+
+
+.container-2 {
+  background-color: cornflowerblue;
+}
