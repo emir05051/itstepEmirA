@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.num1,
+.num2 {
+    padding: 10px;
+    height: 50%;
+}
+
+.num2 {
+    background-color: black;
+}
+
+.num1_2 {
+    background-color: black;
+    width: 10%;
+    height: 100%;
+}
+
+.num2_1 {
+    background-color: white;
+    margin-left: auto;
+    width: 15%;
+    height: 100%;
+}

@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 25%;
+    display: inline-block;
+    height: 100%;
+}
+
+.one {
+    background-color: red;
+}
+
+.two {
+    background-color: magenta;
+}
+
+.three {
+    background-color: yellow;
+}
+
+.four {
+    background-color: black;
+}
