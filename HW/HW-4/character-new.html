@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <script src="main.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css1.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+
+        <form name="character" enctype="multipart/form-data">
+            <h2>Пользователь</h2>
+            <div class="first-part">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required />
+                </div>
+                <div class="password">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" required/>
+                </div>
+                <div class="avatar">
+                    <label for="avatar">Аватар</label>
+                    <input type="file" name="avatar" id="avatar" required/>
+                </div>
+                <div class="date">
+                    <label for="dateOfBirth">Дата рождения</label>
+                    <input type="date" name="dateOfBirth" id="dateOfBirth" required/>
+                </div>
+            </div>
+            <h2>Персонаж</h2>
+            <div class="second-part">
+                <div class="name">
+                    <label for="name">Имя</label>
+                    <input type="firstname" name="name" id="name" required/>
+                </div>
+                <div class="planet">
+                    <p>Планета</p>
+                    <label>
+                <input type="radio" name="planet" value="coruscant" required/>coruscant
+                </label>
+                    <label>
+                    <input type="radio" name="planet" value="cybetron" required/>cybetron
+                </label>
+                    <label>
+                    <input type="radio" name="planet" value="gallifrey" required/>gallifrey
+                </label>
+                </div>
+                <div class="experience">
+                    <p>Опыт</p>
+                    <label>
+                    <input type="radio" name="background" value="pilot" required/>pilot
+                </label>
+                    <label>
+                    <input type="radio" name="background" value="miner" required/>miner
+                </label>
+                    <label>
+                    <input type="radio" name="background" value="merhant" required/>merhant
+                </label>
+                </div>
+                <div class="age">
+                    <label for="age">
+                    Возраст
+                </label>
+                    <input type="number" name="age" id="age" min="1" max="100" required/>
+                </div>
+                <div class="int">
+                    <p>Характеристики:</p>
+                    <ul>
+                        <li><label>Интеллект: <input type="number" name="intelligence" min="1" max="20" class="null" disabled/></label></li>
+                        <li><label>Телосложение: <input type="number" name="constitution" min="1" max="20" class="null" disabled/></label></li>
+                        <li><label>Харизма: <input type="number" name="charisma" min="1" max="20" class="null" disabled /></label></li>
+                    </ul>
+                    <button type="button" id="roll">Generate</button>
+                </div>
+                <div class="pet">
+                    <label for="pet">
+                    Питомец
+                </label>
+                    <select id="pet">
+                    <option value="">---</option>
+                    <optgroup label="Роботы">
+                        <option>Киборг</option>
+                        <option>Робот</option>
+                        <option>Кибернет</option>
+                    </optgroup>
+                    <optgroup label="Живые">
+                        <option>Собака</option>
+                        <option>Попугай</option>
+                        <option>Кошка</option>
+                    </optgroup>
+                </select>
+                </div>
+                <div class="inventory">
+                    <p>Инвентарь</p>
+                    <div class="inventory">
+                        <label><input type="checkbox" name="inventory-pickaxe" value="pickaxe"/>Кирка</label>
+                        <label><input type="checkbox" name="inventory-sword" value="sword"/>Меч</label>
+                        <label><input type="checkbox" name="inventory-pistolet" value="pistolet"/>Пистолет</label>
+                        <label><input type="checkbox" name="inventory-rifle" value="rifle"/>Автомат</label>
+                    </div>
+                </div>
+                <div class="color">
+                    <label for="color">Цвет корабля</label>
+                    <input type="color" name="shipColor" id="color" required/>
+                </div>
+                <div class="description">
+                    <label for="description">Описание</label>
+                    <input type="text" name="description" id="description" />
+                </div>
+            </div>
+            <button type="submit" class="send">
+				Отправить
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
