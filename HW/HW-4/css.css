@@ -1,134 +1,175 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255)
     /* text-align: center; */
 }
 
-body{
-    background-image: url(https://img1.akspic.ru/image/80651-temnota-uzor-zelenyj-chernyy-haker-1920x1080.jpg);
+body {
+    /* background-image: url(https://img1.akspic.ru/image/80651-temnota-uzor-zelenyj-chernyy-haker-1920x1080.jpg); */
 }
 
-table, tr, td{
+table,
+tr,
+td {
     border: 2px ridge thistle;
     margin: 2px;
     /* background-color: lawngreen; */
 }
 
-input{
-    background-color: gainsboro;
+input {
+    border-radius: 7%;
+    border: 4px groove rgb(62, 170, 189);
+    background-color: whitesmoke;
     color: rgb(247, 0, 255);
 }
 
-li{
+input:focus {
+    padding: 5px;
+}
+
+li {
     list-style: none;
 }
 
-button{
+button {
     color: rgb(0, 0, 0);
     width: 100px;
 }
 
-select, option{
+select,
+option {
     color: navy;
 }
 
-optgroup{
+optgroup {
     color: blue;
     font-weight: bold;
     /* font-style: italic; */
     font-style: oblique;
 }
 
-pre{
+pre {
     color: rgb(255, 0, 0);
     display: inline-block;
     background-color: rgb(0, 174, 255);
 }
 
+select {
+    display: flex;
+    background-color: transparent;
+    border: 4px groove black;
+}
+
+
 /* ID */
 
-#user, #character{
+
+/* #user,
+#character {
     display: inline;
     background-color: rgb(27, 163, 204);
     margin-left: 200px;
+} */
+
+#user,
+#character {
+    color: black;
 }
 
-#roll{
+#roll {
     width: 100%;
     background-color: darkgreen;
     color: chartreuse;
     padding: 10;
 }
 
-#roll:focus{
+#roll:focus {
     width: 100%;
     background-color: rgb(255, 0, 0);
     color: black;
     padding: 10;
     font-size: 20;
 }
+
+
 /* CLASS */
-.main{
+
+
+/* .main {
     background-color: maroon;
     display: inline-block;
     margin: 150 10 10 200;
     padding: 3%;
-    width: 50%;**
+    width: 50%;
     height: 600px;
+} */
+
+.main {
+    display: flex;
+    flex-direction: column;
 }
 
-.email{
+.email {
     background-color: darksalmon;
     padding: 10px;
     width: 50%;
 }
 
-.password{
+.password {
     background-color: darkslateblue;
     padding: 10px;
     width: 50%;
 }
 
-.ava{
+.ava {
     background-color: goldenrod;
     padding: 5px;
     width: 50%;
 }
 
-.date{
+.date {
     background-color: indianred;
     padding: 5px;
     width: 50%;
 }
 
-.name{
+.name {
     background-color: palegreen;
     padding: 5px;
     width: 50%;
 }
 
-.planet{
+.planet {
     background-color: indianred;
     padding: 5px;
     width: 50%;
 }
 
-.exp{
+.exp {
     background-color: red;
 }
 
-.age{
+.age {
     background-color: royalblue;
     padding: 5px;
 }
 
-.stats{
+.stats {
     background-color: sienna;
     padding: 5px;
 }
 
-.pet, .inv, .color, .description{
+.pet,
+.inv,
+.color,
+.description {
     background-color: teal;
     text-align: center;
+}
+
+.null {
+    background-color: grey;
+    border: none;
+    color: white;
 }
