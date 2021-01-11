@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+.lawn {
+    padding: 4%;
+    height: 100%;
+}
+
+.house {
+    display: flex;
+    height: 100%;
+}
+
+.terrace {
+    flex: 2 1 2px;
+    background-color: yellow;
+}
+
+.middle {
+    flex: 0 1 280px;
+    background-color: red;
+}
+
+.right-wing {
+    flex: 3 1 3px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guest {
+    flex: 0.9 0 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+.garage {
+    flex: 0 0 200px;
+    width: 100%;
+}
