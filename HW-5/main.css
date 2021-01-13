@@ -16,21 +16,35 @@ html {
 .house {
     display: flex;
     height: 100%;
+    overflow: hidden;
 }
 
 .terrace {
     flex: 2 1 2px;
     background-color: yellow;
+    display: flex;
+    align-items: stretch;
+}
+
+.left-wing {
+    flex: 1 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 30% 0 30% 30%;
 }
 
 .middle {
     flex: 0 1 280px;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
 }
 
 .right-wing {
     flex: 3 1 3px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -47,9 +61,177 @@ html {
     flex: 0.9 0 0;
     width: 100%;
     max-width: 500px;
+    border-top-right-radius: 80px;
 }
 
 .garage {
-    flex: 0 0 200px;
+    flex: 0 0 210px;
     width: 100%;
+}
+
+.entry {
+    flex: 0 0 200px;
+}
+
+.hall {
+    flex: 4 1 40px;
+}
+
+.auxilarry {
+    flex: 3 1 30px;
+    display: flex;
+}
+
+.storage {
+    flex: 3.5 1 35px;
+}
+
+.bathroom {
+    flex: 6.5 1 65px;
+}
+
+.dining {
+    flex: 3 1 30px;
+    width: 100%;
+}
+
+.kitchen {
+    flex: 2 1 20px;
+    width: 75%;
+}
+
+.pillars {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0 10px 10px;
+}
+
+.pillar {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+}
+
+.area,
+.middle {
+    border-style: solid;
+    border-color: black;
+}
+
+.middle,
+.middle .area,
+.garage {
+    border-width: 5px;
+}
+
+.dining {
+    border-width: 10px 0 10px 10px;
+}
+
+.kitchen {
+    border-width: 0px 0 10px 10px;
+}
+
+.guest {
+    border-width: 10px 10px 0 0;
+}
+
+.garage {
+    border-width: 10px 0 0 0;
+    position: relative;
+}
+
+.garage-pillars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.garage-pillar {
+    background-color: black;
+}
+
+.garage-pillar-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.garage-pillar-bottom-1,
+.garage-pillar-bottom-2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.garage-pillar-bottom-1 {
+    width: 10px;
+    height: 10px;
+    right: 10px;
+}
+
+.garage-pillar-bottom-2 {
+    width: 10px;
+    height: 20px;
+    right: 0px;
+}
+
+.cars {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.spot {
+    flex: 0 0 145px;
+    padding: 30px;
+    height: 100%;
+}
+
+.car {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.measurable {
+    position: relative;
+}
+
+.measurable:hover>.size {
+    display: block;
+}
+
+.size {
+    display: none;
+    position: absolute;
+    background-color: black;
+    border-radius: 0 0 5px 5px;
+    padding: 4px;
+    color: white;
+}
+
+.size-x {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.size-y {
+    transform-origin: top left;
+    transform: rotateZ(-90deg) translate(-50%, 0);
+    top: 50%;
+    left: 0;
 }
