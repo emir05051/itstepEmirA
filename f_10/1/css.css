@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 300 18px Roboto, san-serif;
+}
+
+.grid {
+    flex: 1 1 auto;
+    max-width: 900px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cell {
+    flex: 1 1 auto;
+    width: 350px;
+    min-width: 150px;
+    padding: 20px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.big {
+    font-size: 22px;
+}
+
+.button {
+    /* width: 100%; */
+    display: flex;
+    cursor: crosshair;
+    /* align-items: stretch; */
+}
+
+.button-icon {
+    flex: 0 0 auto;
+    box-sizing: content-box;
+    width: 1.5em;
+    height: 1.5em;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-caption {
+    flex: 1 1 auto;
+    align-self: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.default {
+    background-color: hsl(0, 0%, 94%);
+}
+
+.default .button-caption {
+    padding-right: 1em;
+}
+
+.default:hover {
+    background-color: hsl(345, 90%, 60%);
+    color: white;
+}
+
+.gradient {
+    background-image: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(190, 100%, 85%));
+}
+
+.gradient:hover {
+    background-image: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+}
+
+.underline {
+    background-color: hsl(0, 0%, 94%);
+    position: relative;
+}
+
+.underline::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    height: 5px;
+    bottom: -2px;
+    background-color: hsl(0, 0%, 84%);
+}
+
+.underline:hover::after {
+    bottom: -3px;
+    height: 7px;
+    background: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+}
+
+
+/* 
+.corner {
+    background-image: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(190, 100%, 85%));
+    position: relative;
+}
+
+.corner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 1.25em solid transparent;
+    border-right-color: white;
+    border-bottom-color: white;
+    z-index: 10;
+    left: 88%;
+}
+
+.corner:hover {
+    background: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+} */
+
+.corner {
+    background: linear-gradient(-45deg, transparent 1.76em, hsl(345, 100%, 85%) 1.76em, hsl(190, 100%, 85%));
+}
+
+.corner .button-caption {
+    padding-right: 2.5em;
+}
+
+.corner:hover {
+    background: linear-gradient(-45deg, transparent 1.76em, hsl(345, 90%, 50%) 1.76em, hsl(190, 90%, 50%));
+    color: white;
+}
+
+
+/* 
+a
+a
+a
+ */
+
+
+/* 
+.diamond {
+    background-image: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(190, 100%, 85%));
+    position: relative; 
+}
+
+.diamond::before {
+    content: '';
+    transform: rotate(45deg);
+    display: block;
+     position: absolute; 
+    width: 50%;
+    height: 10px;
+    border: 1.25em solid transparent;
+    border-top: 1.25em solid black;
+    border-right: 1.25em solid black;
+     left: 50%; 
+}
+
+.diamond:hover {
+    background: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+} */
+
+.diamond {
+    background: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(345, 100%, 85%) 20%, hsl(190, 100%, 85%) 80%, hsl(190, 100%, 85%));
+    margin-left: .7em;
+    margin-right: .7em;
+}
+
+.diamond .button-icon {
+    padding-left: 0;
+}
+
+.diamond::after,
+.diamond::before {
+    content: '';
+    display: block;
+}
+
+.diamond::after {
+    border-left: .7em solid hsl(345, 100%, 85%);
+    border-top: 1em solid transparent;
+    border-bottom: 1.5em solid transparent;
+    margin-right: -.7em;
+}
+
+.diamond::before {
+    border-right: .7em solid hsl(190, 100%, 85%);
+    border-top: 1.5em solid transparent;
+    border-bottom: 1em solid transparent;
+    margin-left: -.7em;
+}
+
+.diamond:hover {
+    background: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(345, 90%, 50%) 20%, hsl(190, 90%, 50%) 80%, hsl(190, 90%, 50%));
+    color: white;
+}
+
+.diamond:hover::after {
+    border-left-color: hsl(345, 90%, 50%);
+}
+
+.diamond:hover::before {
+    border-right-color: hsl(190, 90%, 50%);
+}

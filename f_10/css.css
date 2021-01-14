@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 300 18px Roboto, san-serif;
+}
+
+.grid {
+    flex: 1 1 auto;
+    max-width: 900px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cell {
+    flex: 1 1 auto;
+    width: 350px;
+    min-width: 150px;
+    padding: 20px;
+}
+
+.medium {
+    font-size: 18px;
+}
+
+.big {
+    font-size: 22px;
+}
+
+.button {
+    /* width: 100%; */
+    display: flex;
+    cursor: ;
+    /* align-items: stretch; */
+}
+
+.button-icon {
+    flex: 0 0 auto;
+    box-sizing: content-box;
+    width: 1.5em;
+    height: 1.5em;
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-caption {
+    flex: 1 1 auto;
+    align-self: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.default {
+    background-color: hsl(0, 0%, 94%);
+}
+
+.default .button-caption {
+    padding-right: 1em;
+}
+
+.default:hover {
+    background-color: hsl(345, 90%, 60%);
+    color: white;
+}
+
+.gradient {
+    background-image: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(190, 100%, 85%));
+}
+
+.gradient:hover {
+    background-image: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+}
