@@ -221,3 +221,35 @@ a
 .diamond:hover::before {
     border-right-color: hsl(190, 90%, 50%);
 }
+
+.circle {
+    background: linear-gradient(-45deg, hsl(345, 100%, 85%), hsl(190, 100%, 85%));
+    border-radius: 1.25em;
+    width: 2.5em;
+    z-index: 1;
+}
+
+.circle .button-icon {
+    border-radius: 1.25em;
+}
+
+.circle .button-caption {
+    padding-right: 1em;
+    padding-left: 1em;
+    display: none;
+}
+
+.circle:hover {
+    z-index: 2;
+    width: auto;
+    background: linear-gradient(-45deg, hsl(345, 90%, 50%), hsl(190, 90%, 50%));
+    color: white;
+}
+
+.circle:hover .button-icon {
+    background-color: hsla(0, 0%, 100%, .3);
+}
+
+.circle:hover .button-caption {
+    display: block;
+}
