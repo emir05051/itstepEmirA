@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Малевич</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .easel {
+            height: 800px;
+            position: relative;
+        }
+        
+        .palette {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 80px;
+            transform: translateX(-100%) translateX(-10px)
+        }
+        
+        .reference {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            opacity: 0.1;
+        }
+        
+        .canvas {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background-color: #f1f2ec;
+        }
+        
+        .shape {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 95px;
+            height: 95px;
+            background-color: grey;
+        }
+        
+        .box {
+            transform-origin: top left;
+            transform: translate(269px, 551px) rotateZ(-36deg) scale(2, 3);
+            perspective: 200px;
+            background-color: transparent;
+        }
+        
+        .rect4 {
+            width: 100%;
+            height: 100%;
+            transform: rotateX(-47deg);
+            background-color: #183d65;
+        }
+        
+        .rect1 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            transform-origin: top left;
+            transform: translate(181px, 35px) scale(2.75, 2.7);
+        }
+        
+        .rect2 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            transform-origin: top left;
+            transform: translate(51px, 355px) scale(1.07, 1.73);
+        }
+        
+        .rect3 {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #843e09;
+            transform-origin: top left;
+            transform: translate(121px, 527px) scale(0.7, 0.6);
+        }
+        
+        .rect5 {
+            width: 90px;
+            height: 90px;
+            background: #843e09;
+            border-radius: 50px;
+            transform: translate(182px, 443px);
+        }
+        
+        .rect6 {
+            width: 55px;
+            height: 55px;
+            background: white;
+            border-radius: 50px;
+            transform: translate(199px, 370px);
+        }
+        
+        .rect7 {
+            position: absolute;
+            transform-origin: top left;
+            width: 91px;
+            height: 44px;
+            background: black;
+            transform: translate(457px, 548px) rotateZ(-36deg) scaleX(1.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="easel">
+        <img class="palette" src="medium.jpg" />
+        <img class="reference" src="medium.jpg">
+        <div class="canvas">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect5"></div>
+            <div class="rect6"></div>
+            <div class="shape box">
+                <div class="rect4"></div>
+            </div>
+            <div class="rect7"></div>
+
+        </div>
+    </div>
+</body>
+
+</html>

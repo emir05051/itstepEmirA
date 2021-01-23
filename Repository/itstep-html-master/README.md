@@ -145,92 +145,105 @@
   
   <tr>
     <td valign="top">10</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/_ZEWiH-xwVPIctZJhZi88khk443hcgeubcAWBs_aXR_fFj4JecIY_kogzhQzy6c6.tJS0zu5HNiHoMF8H?startTime=1609765191000">04.01</a></td>
+    <td valign="top"><a>CSS5</a>
       <ul>
-        <li>Flex</li>
-        <li>Шрифт,  line-hight, float</li>
-        <li>Цвета, фон, градиенты, картинки</li>
-        <li>outline, shadow</li>
-        <li>? Шрифты иконок</li>
-        <li>Column</li>
-        <li>Grid</li>
-        <li>Filter</li>
-        <li>Transform</li>
-        <li>Transition, animation</li>
-        <li>Misc: counter, word-wrap, text-overflow...</li>
+        <li>Flex (пропорции)</li>
+        <li>Цвета: rgb</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
   
   <tr>
     <td valign="top">11</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/2Y8okG26r7TXxnG51q8CqV2aDYtVejD_06uMgqVyJ6AyP0pERhCFwqh5UyEIKewv.CNU8PXost6iMyR9N?startTime=1609937626000">06.01</a></td>
+    <td valign="top"><a>CSS6</a>
       <ul>
+        <li>Flex: order</li>
+        <li>Цвета: hsl</li>
+        <li>Шрифты</li>
+        <li>Шрифты иконок</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
   
   <tr>
     <td valign="top">12</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 3-8</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/PYDuutMU0gFgEZ4Mua1QqU_rcFCO_iu7MJ9SJmwD890Mb6xBVaC14SZe3ymcaCd4.oTMFX74x-VF1WxDP?startTime=1610110234000">08.10</a></td>
+    <td valign="top"><a>CSS7</a>
       <ul>
+        <li>line-hight, float</li>
+        <li>Фон, градиенты, картинки</li>
+        <li>outline</li>
       </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
+    <td valign="top">
+      <a href="./EX-5">EX-5</a>: Упражнение на flex
+    </td>
   </tr>
   
   <tr>
     <td valign="top">13</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/J8Io0tTy-kr6ReqjoKuAyvp7BJGBA-6ZexO5ckj1dpoHooX5IargPLGaEkHgrBTT.zkWCdjMpfcFD9a-W?startTime=1610369532000">11.01</a></td>
+    <td valign="top"><a>CSS8</a>
       <ul>
-        <li>Стилизация форм</li>
-        <li>Layout: Табличный, float, flex, grid.</li>
-        <li>Grid system</li>
-        <li>...</li>   
+        <li>shadow</li>
+        <li>Разбор HW-5</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-5">HW-5</a>: Сверстать страницу как на картинке
+    </td>
     <td valign="top"></td>
   </tr>
 
   <tr>
     <td valign="top">14</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
-      <ul></ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/Cgu1I_aZX8maLCHqsNSH57uF8_7Tl2IMccH8dlbiI13qzMbeA0ynRvZtzWYSolwZ._WuP8JzVhs6TpoXW?startTime=1610542514000">13.01</a></td>
+    <td valign="top"><a>CSS9</a>
+      <ul>
+        <li>Transform</li>
+      </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">
+      <a href="./HW-6">HW-5</a>: Сверстать картину Малевича
+    </td>
+    <td valign="top">
+      <a href="./EX-6">EX-6</a>: Сверстать кнопки</td>
   </tr>  
 
   <tr>
     <td valign="top">15</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 9-11</a>
-      <ul></ul>
+    <td valign="top"><a href="https://zoom.us/rec/share/8CFWEdXsLkrZmB95yJrodh_PNap8eSBzSFAC75OqVWjOu5bgCllR38D2KUiR358P.DqN7hF6QwdHLiuzT?startTime=1610628867000">14.01<a/></td>
+    <td valign="top"><a>CSS10</a>
+      <ul>
+        <li>Transition</li>
+      </ul>
     </td>
-    <td valign="top"></td>
-    <td valign="top"></td>
+    <td valign="top">Найти и презентовать на уроке "css-трюка - интересный, необычный или нестандартный пример использования css</td>
+    <td valign="top"><a href="./EX-6">EX-6</a>: Сверстать кнопки с transition</td>
   </tr>  
   
   <tr>
     <td valign="top">16</td>
-    <td valign="top"></td>
-    <td valign="top"><a>CSS 12</a>
+    <td valign="top"><a href="https://zoom.us/rec/share/ydtp6gQLScxYCSkp_g_WLEYsQVQHWOyc-GLvQ9k_8PB8QDz6pRwqKHeBjm1fFmXU.NYTqI4xBNsC5hcI3?startTime=1610974772000">18.01</a></td>
+    <td valign="top"><a>CSS11</a>
       <ul>
-        <li>Media queries. Адаптивная верстка</li>
+        <li>Animation</li>
       </ul>
     </td>
-    <td valign="top"></td>
+    <td valign="top">---</td>
     <td valign="top"></td>
   </tr>  
 
@@ -239,6 +252,14 @@
     <td valign="top"></td>
     <td valign="top"><a>Bootstrap ?</a>
       <ul>
+        <li>Grid</li>
+        <li>Filter</li>
+        <li>Misc: counter</li>
+        <li>Стилизация форм</li>
+        <li>Layout: Табличный, float, flex, grid.</li>
+        <li>Grid system</li>
+        <li>...</li>   
+        <li>Media queries. Адаптивная верстка</li>
       </ul>
     </td>
     <td valign="top"></td>
