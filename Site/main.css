@@ -116,3 +116,10 @@
 .nav__right_style {
     cursor: pointer;
 }
+
+
+/* Основная часть */
+
+.main__headphone__image {
+    width: 100%;
+}
