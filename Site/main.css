@@ -9,6 +9,7 @@
     width: 100%;
     height: 52px;
     background-color: black;
+    min-width: 1000px;
 }
 
 .header__nav {
@@ -16,7 +17,6 @@
     margin: 0 5%;
     padding-top: 18px;
     flex-direction: row;
-    flex: 1 0 auto;
 }
 
 .nav__left {
@@ -42,29 +42,26 @@
 .nav_after {
     margin-top: auto;
     width: 100%;
-    height: 2px;
+    height: 0px;
     background-color: teal;
-    opacity: 0;
-    transition: opacity 1s;
+    transition: height 0.1s linear;
 }
 
 .nav__shop:hover .nav__shop__after {
-    opacity: 100;
+    height: 2px;
 }
 
 .nav__electronics:hover .nav__electronics__after {
-    opacity: 100;
+    height: 2px;
 }
 
 .nav__playstation:hover .nav__playstation__after {
-    opacity: 100;
+    height: 2px;
 }
 
 .nav__support:hover .nav__support__after {
-    opacity: 100;
+    height: 2px;
 }
-
-.nav__left_style:hover {}
 
 .nav__right {
     display: flex;
@@ -88,7 +85,14 @@
     height: 20px;
     width: 107px;
     padding: 12px;
+    padding-left: 20px;
+    padding-bottom: 15px;
     transition: background-color 0.2s;
+}
+
+.nav__right__search_input::placeholder {
+    color: white;
+    font-size: 10px;
 }
 
 .nav__right__search_button {
