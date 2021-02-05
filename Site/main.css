@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.header_style {
+    width: 100%;
+    height: 52px;
+    background-color: black;
+}
+
+.header__nav {
+    display: flex;
+    margin: 0 5%;
+    padding-top: 18px;
+    flex-direction: row;
+    flex: 1 0 auto;
+}
+
+.nav__left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__logo__image {
+    display: block;
+    height: 15px;
+    width: 80px;
+}
+
+.nav__left_style {
+    margin: -2px 15px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+}
+
+.nav_after {
+    margin-top: auto;
+    width: 100%;
+    height: 2px;
+    background-color: teal;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.nav__shop:hover .nav__shop__after {
+    opacity: 100;
+}
+
+.nav__electronics:hover .nav__electronics__after {
+    opacity: 100;
+}
+
+.nav__playstation:hover .nav__playstation__after {
+    opacity: 100;
+}
+
+.nav__support:hover .nav__support__after {
+    opacity: 100;
+}
+
+.nav__left_style:hover {}
+
+.nav__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    transform: translateY(-3px);
+}
+
+.nav__right__registration {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+.nav__right__search_input {
+    background-color: #504d56;
+    border: none;
+    outline: none;
+    height: 20px;
+    width: 107px;
+    padding: 12px;
+    transition: background-color 0.2s;
+}
+
+.nav__right__search_button {
+    width: 20px;
+    height: 15px;
+    transform: translate(-20px, 3px);
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.nav__right_form:hover .nav__right__search_input {
+    background-color: #5d58f5;
+}
+
+.nav__right__search_button {
+    background-image: url(../fontawesome-free-5.15.1-web/svgs/solid/search.svg);
+    background-repeat: no-repeat;
+}
+
+.nav__right_style {
+    cursor: pointer;
+}
