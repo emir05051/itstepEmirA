@@ -11,115 +11,171 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
-<body class="page">
-    <div class="header header_style">
-        <div class="header__nav">
-            <div class="nav__left">
-                <div class="nav__logo">
-                    <img src="Resources/Images/Sony_logo.svg" alt="sony" class="nav__logo__image">
-                </div>
-                <div class="nav__shop nav__left_style">
-                    Наш магазин
-                    <div class="nav__shop__after nav_after"></div>
-                </div>
-                <div class="nav__electronics nav__left_style">
-                    Электроника
-                    <div class="nav__electronics__after nav_after"></div>
-                </div>
-                <div class="nav__playstation nav__left_style">
-                    PlayStation
-                    <div class="nav__playstation__after nav_after"></div>
-                </div>
-                <div class="nav__support nav__left_style">
-                    Поддержка
-                    <div class="nav__support__after nav_after"></div>
-                </div>
-            </div>
-            <div class="nav__right">
-                <div class="nav__right__registration nav__right_transform nav__right_style">
-                    Регистрация
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="nav__right__search nav__right_transform nav__right_style">
-                    <form class="nav__right_form">
-                        <input type="text" placeholder="Искать Sony" class="nav__right__search_input">
-                        <button type="submit" class="nav__right__search_button" class="nav__right_style"></button>
-                    </form>
-                </div>
-                <div class="nav__right__language nav__right_style">
-                    <div class="nav__right__language_all">Язык</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="main">
-        <div class="main__headphone">
-            <img src="Resources/Images/man.webp" alt="man" class="main__headphone__image">
-            <div class="main__headphone__window">
-                <div class="headphone__window__title main__headphone__window_text">НИКАКОГО ШУМА. <br>ТОЛЬКО ТЫ И ТВОЯ МУЗЫКА.</div>
-                <div class="headphone__window__text main__headphone__window_text">В наушниках WH-1000XM4 можно погрузиться в мир музыки. Они оснащены интеллектуальной технологией, которая автоматически регулирует воспроизведение, чтобы обеспечить четкое звучание и минимизировать шумы.</div>
-                <div class=" main__headphone__window_text">
-                    <button class="headphone__window__button">Подробнее о WH-1000XM4</button>
+<body>
+    <div class="page">
+        <div class="header header_style">
+            <div class="header__nav__small ">
+                <div class="header__nav__small__menu ">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fas fa-bars"></i></button>
+                        <div class="dropdown-content">
+                            <a href="#">Наш магазин</a>
+                            <a href="#">Электроника</a>
+                            <a href="#">PlayStation</a>
+                            <a href="#">Поддержка</a>
+                            <a href="#">Регистрация</a>
+                        </div>
+                    </div>
+
+                    <div class="header__nav__small__logo">
+                        <img src="Resources/Images/Sony_logo.svg" alt="sony" class="nav__logo__image">
+                    </div>
                 </div>
 
             </div>
+            <div class="header__nav">
+                <div class="nav__left">
+                    <div class="nav__logo">
+                        <img src="Resources/Images/Sony_logo.svg" alt="sony" class="nav__logo__image">
+                    </div>
+                    <div class="nav__shop nav__left_style">
+                        Наш магазин
+                        <div class="nav__shop__after nav_after"></div>
+                    </div>
+                    <div class="nav__electronics nav__left_style">
+                        Электроника
+                        <div class="nav__electronics__after nav_after"></div>
+                    </div>
+                    <div class="nav__playstation nav__left_style">
+                        PlayStation
+                        <div class="nav__playstation__after nav_after"></div>
+                    </div>
+                    <div class="nav__support nav__left_style">
+                        Поддержка
+                        <div class="nav__support__after nav_after"></div>
+                    </div>
+                </div>
+                <div class="nav__right">
+                    <div class="nav__right__registration nav__right_transform nav__right_style">
+                        Регистрация
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="nav__right__search nav__right_transform nav__right_style">
+                        <form class="nav__right_form">
+                            <input type="text" placeholder="Искать Sony" class="nav__right__search_input">
+                            <button type="submit" class="nav__right__search_button" class="nav__right_style"></button>
+                        </form>
+                    </div>
+                    <div class="nav__right__language nav__right_style">
+                        <div class="nav__right__language_all">Язык</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="main__products">
-            <div class="main__products__newest">
-                <div class="main__products__newest__header text-header">Новые продукты</div>
-                <div class="main__products__newest__tv">
-                    <div class="main__products__newest_style tv-1">
-                        <div class="tv-1__text">OLED, каким вы его еще не видели <i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
+        <div class="main">
+            <div class="main__headphone">
+                <img src="Resources/Images/man.webp" alt="man" class="main__headphone__image">
+                <div class="main__headphone__window">
+                    <div class="headphone__window__title main__headphone__window_text">НИКАКОГО ШУМА. <br>ТОЛЬКО ТЫ И ТВОЯ МУЗЫКА.</div>
+                    <div class="headphone__window__text main__headphone__window_text">В наушниках WH-1000XM4 можно погрузиться в мир музыки. Они оснащены интеллектуальной технологией, которая автоматически регулирует воспроизведение, чтобы обеспечить четкое звучание и минимизировать шумы.</div>
+                    <div class=" main__headphone__window_text">
+                        <button class="headphone__window__button">Подробнее о WH-1000XM4</button>
+                    </div>
 
-                    </div>
-                    <div class="main__products__newest_style tv-2">
-                        <div class="tv-2__text">Впечатляющий реализм <br/> 8K благодаря живому интеллекту<i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
-                    </div>
-                    <div class="main__products__newest_style tv-3">
-                        <a href="#">
-                            <div class="tv-3__text">Музыка вокруг вас<i class="fas fa-chevron-right" style="color: rgb(36, 36, 36); font-size: 22px; margin-left: 5px;"></i></div>
-                        </a>
-                    </div>
                 </div>
             </div>
             <div class="main__products">
-                <div class="main__products__popular__header text-header">Популярные продукты</div>
-                <div class="main__products__popular">
-                    <div class="grid-1 grid-1_text">Создай свой блог вместе с Sony</div>
-                    <div class="grid-2">
-                        <a href=#></a>
+                <div class="main__products__newest">
+                    <div class="main__products__newest__header text-header">Новые продукты</div>
+                    <div class="main__products__newest__tv">
+                        <div class="main__products__newest_style tv-1">
+                            <div class="tv-1__text">OLED, каким вы его еще не видели <i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
+
+                        </div>
+                        <div class="main__products__newest_style tv-2">
+                            <div class="tv-2__text">Впечатляющий реализм <br/> 8K благодаря живому интеллекту<i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
+                        </div>
+                        <div class="main__products__newest_style tv-3">
+                            <a href="#">
+                                <div class="tv-3__text">Музыка вокруг вас<i class="fas fa-chevron-right" style="color: rgb(36, 36, 36); font-size: 22px; margin-left: 5px;"></i></div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="grid-3">
-                        <a href=#></a>
-                    </div>
-                    <div class="grid-5">
-                        <a href=#></a>
-                    </div>
-                    <div class="grid-6">
-                        <a href=#></a>
+                </div>
+                <div class="main__products">
+                    <div class="main__products__popular__header text-header">Популярные продукты</div>
+                    <div class="main__products__popular">
+                        <div class="grid-1 grid-1_text">Создай свой блог вместе с Sony</div>
+                        <div class="grid-2">
+                            <a href=#></a>
+                        </div>
+                        <div class="grid-3">
+                            <a href=#></a>
+                        </div>
+                        <div class="grid-5">
+                            <a href=#></a>
+                        </div>
+                        <div class="grid-6">
+                            <a href=#></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="footer__top">
-            <div class="footer_shop">
-                <div class="footer_shop_header footer_header">Магазины</div>
-                <input type="submit">
+        <div class="footer">
+            <div class="footer_big">
+                <div class="footer__top">
+                    <div class="footer_shop">
+                        <div class="footer_shop_header footer_header">Магазины</div>
+                        <form class="footer_shop__form">
+                            <input type="text" name="store" placeholder="Поиск" class="footer_shop_input footer__input_style">
+                            <button type="reset" class="footer_shop__form__button footer_shop__form__button_style">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Поиск
+                        </button>
+                        </form>
+                    </div>
+                    <div class="footer_community">
+                        <div class="footer_community_header footer_header">Сообщество</div>
+                        <div class="footer_community_foto "><a href="#" class="footer_community_link">Фотогалерея</a></div>
+                        <div class="footer_community_forum"><a href="#" class="footer_community_link">Форум и чат</a></div>
+                        <div class="footer_community_gallery"><a href="#" class="footer_community_link">Галерея</a></div>
+                    </div>
+                    <div class="footer_information">
+                        <div class="footer_information_header footer_header">Новости</div>
+                        <div class="footer_information_information"><a href="#" class="footer_community_link">Информация о нормативных<br> требованиях и переработке</a></div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__bottom__text">
+                        © 2020 АО СОНИ ЭЛЕКТРОНИКС
+                    </div>
+                </div>
             </div>
-            <div class="footer_community">
-                <div class="footer_community_header footer_header">Магазины</div>
-                <div class="footer_community_foto">Фотогалерея</div>
-                <div class="footer_community_forum">Форум и чат</div>
-                <div class="footer_community_gallery">Галерея</div>
-            </div>
-            <div class="footer_information">
-                <div class="footer_information_header footer_header">Новости</div>
-                <div class="footer_information_information">Информация о нормативных<br> требованиях и переработке</div>
+            <div class="footer_small">
+                <div class="footer_small__shop">
+                    <div class="footer_small__shop footer_header">Магазины</div>
+                    <form class="footer_small__form">
+                        <input type="text" name="store" placeholder="Поиск" class="footer_small__input footer__input_style">
+                        <button type="reset" class="footer_small__form__button footer_shop__form__button_style">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Поиск
+                        </button>
+                    </form>
+                </div>
+                <div class="footer_small__community">
+                    <div class="footer_community_header footer_header">Сообщество</div>
+                    <div class="footer_community_foto "><a href="#" class="footer_community_link">Фотогалерея</a></div>
+                    <div class="footer_community_forum"><a href="#" class="footer_community_link">Форум и чат</a></div>
+                    <div class="footer_community_gallery"><a href="#" class="footer_community_link">Галерея</a></div>
+                </div>
+                <div class="footer_small__information">
+                    <div class="footer_information_header footer_header">Новости</div>
+                    <div class="footer_information_information"><a href="#" class="footer_community_link">Информация о нормативных требованиях и переработке</a></div>
+                </div>
             </div>
         </div>
-        <div class="footer__bottom"></div>
+
     </div>
 </body>
 

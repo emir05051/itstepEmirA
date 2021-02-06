@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .page {
     overflow-x: hidden;
 }
@@ -188,6 +192,7 @@
     height: 35px;
     width: 200px;
     margin-top: 8px;
+    cursor: pointer;
 }
 
 @media(max-width: 1150px) {
@@ -201,6 +206,7 @@
         align-items: flex-start;
         margin-left: 40px;
         margin-top: 40px;
+        min-width: 915px;
     }
     .main__products__newest {
         z-index: 2;
@@ -299,7 +305,7 @@
 .grid-2 {
     background-image: url(Resources/Images/lens.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-position-x: center;
     grid-column: 5;
     cursor: pointer;
@@ -318,7 +324,6 @@
 .grid-5 {
     background-image: url(Resources/Images/undef.webp);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position-x: center;
     grid-column: 5/6;
     grid-row: 2;
@@ -341,7 +346,7 @@
 }
 
 .footer__top {
-    border: white 1px solid;
+    border: #3c3c42 1px solid;
     border-left: none;
     border-right: none;
     padding: 20px;
@@ -368,4 +373,186 @@
 
 .footer_header {
     color: #595a62;
+}
+
+.footer__input_style {
+    background-color: transparent;
+    border: #3c3c42 1px solid;
+    padding: 10px;
+    outline: none;
+}
+
+.main__products {
+    min-width: 900px;
+}
+
+.header__nav__small {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+
+.header__nav__small__menu {
+    position: absolute;
+}
+
+.header__nav__small__logo {
+    position: absolute;
+    z-index: 1;
+    top: 17px;
+    left: 160px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-right: 1px #2f353d solid;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #7f7f7f;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    max-height: 70px;
+    min-height: 10px;
+    align-items: center;
+    /* align-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto; */
+}
+
+.footer_small {
+    padding-top: 50px;
+    padding: 50px 3px 0 3px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex: 1 1 900px;
+}
+
+@media(min-width:550px) {
+    .footer__bottom {
+        height: 70px;
+    }
+}
+
+@media(max-width:550px) {
+    .footer_big {
+        display: none;
+    }
+    .footer_small {
+        display: flex;
+    }
+}
+
+.footer__bottom__text {
+    color: #6e6f70;
+}
+
+.footer_shop__form {
+    position: relative;
+}
+
+.footer_shop__form__button {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.footer_shop__form__button:focus {
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
+}
+
+.footer_shop__form__button_style {
+    width: 80px;
+    height: 22px;
+    background-color: #306af3;
+    border: none;
+}
+
+.fa-map-marker-alt {
+    color: #dc3a1a;
+}
+
+.footer_community_link {
+    text-decoration: none;
+}
+
+.footer_small__shop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_small__community {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_small__information {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 950px) {
+    .nav__right,
+    .nav__left {
+        display: none;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header__nav__small {
+        display: flex;
+    }
+}
+
+@media(max-width: 900px) {
+    .main__headphone__window {
+        min-width: 500px;
+    }
+    .main__products__newest {
+        transform: translateY(-30px);
+    }
+    .main__products {
+        transform: translateY(-30px);
+    }
 }
