@@ -226,6 +226,10 @@ body {
     min-width: 1300px;
 }
 
+.main__products__newest {
+    background-color: #f1f5f9;
+}
+
 .main__products__newest_style {
     height: 500px;
     min-width: 30%;
