@@ -146,28 +146,13 @@ body {
     align-items: center;
     margin-top: 0.7%;
     height: 87%;
-    min-width: 365px;
+    min-width: 403px;
     min-height: 360px;
     flex: 0 1 auto;
     width: calc(25% + 1px);
     margin-left: 200px;
     background-color: white;
     padding: 54px;
-}
-
-@media(max-width: 1150px) {
-    .main__headphone {
-        display: flex;
-        flex-direction: column;
-    }
-    .main__headphone__window {
-        position: relative;
-        display: flex;
-        height: 300px;
-        width: 100%;
-        margin: 0;
-        background-color: white;
-    }
 }
 
 
@@ -193,28 +178,6 @@ body {
     width: 200px;
     margin-top: 8px;
     cursor: pointer;
-}
-
-@media(max-width: 1150px) {
-    .main__headphone__window {
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex: 0 1 auto;
-        padding: 5px;
-        justify-content: start;
-        align-items: flex-start;
-        margin-left: 40px;
-        margin-top: 40px;
-        min-width: 915px;
-    }
-    .main__products__newest {
-        z-index: 2;
-        transform: translateY(-100px);
-    }
-    .main__products {
-        transform: translateY(-100px);
-    }
 }
 
 .main__products__newest__tv {
@@ -318,9 +281,9 @@ body {
 .grid-3 {
     background-image: url(Resources/Images/camera.webp);
     background-repeat: no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
     background-position-x: center;
-    grid-column: 7/9;
+    grid-column: 7/10;
     grid-row: 1/3;
     cursor: pointer;
 }
@@ -471,21 +434,6 @@ body {
     flex: 1 1 900px;
 }
 
-@media(min-width:550px) {
-    .footer__bottom {
-        height: 70px;
-    }
-}
-
-@media(max-width:550px) {
-    .footer_big {
-        display: none;
-    }
-    .footer_small {
-        display: flex;
-    }
-}
-
 .footer__bottom__text {
     color: #6e6f70;
 }
@@ -536,6 +484,38 @@ body {
     justify-content: space-between;
 }
 
+@media(max-width: 1150px) {
+    .main__headphone__window {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex: 0 1 auto;
+        padding: 5px;
+        justify-content: start;
+        align-items: flex-start;
+        margin-left: 40px;
+        margin-top: 40px;
+        min-width: 915px;
+    }
+    .main__headphone__window {
+        position: relative;
+        display: flex;
+        height: 300px;
+        width: 100%;
+        margin: 0;
+        background-color: white;
+    }
+    .main__headphone__window {
+        min-width: 500px;
+    }
+    .main__products__newest {
+        transform: translateY(-30px);
+    }
+    .main__products {
+        transform: translateY(-30px);
+    }
+}
+
 @media(max-width: 950px) {
     .nav__right,
     .nav__left {
@@ -549,14 +529,17 @@ body {
     }
 }
 
-@media(max-width: 900px) {
-    .main__headphone__window {
-        min-width: 500px;
+@media(min-width:550px) {
+    .footer__bottom {
+        height: 70px;
     }
-    .main__products__newest {
-        transform: translateY(-30px);
+}
+
+@media(max-width:550px) {
+    .footer_big {
+        display: none;
     }
-    .main__products {
-        transform: translateY(-30px);
+    .footer_small {
+        display: flex;
     }
 }
