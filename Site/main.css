@@ -85,6 +85,10 @@ body {
     margin-right: 20px;
 }
 
+.nav__right__registration a {
+    text-decoration: none;
+}
+
 .nav__right__search_input {
     background-color: #504d56;
     border: none;
@@ -483,6 +487,9 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* Адаптивность */
 
 @media(max-width: 1150px) {
     .main__headphone__window {
