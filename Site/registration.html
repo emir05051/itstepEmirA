@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sony</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="registration.css">
     <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.15.1-web/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -19,11 +20,11 @@
                     <div class="dropdown">
                         <button class="dropbtn"><i class="fas fa-bars"></i></button>
                         <div class="dropdown-content">
+                            <a href="index.html">Главная</a>
                             <a href="#">Наш магазин</a>
                             <a href="#">Электроника</a>
                             <a href="#">PlayStation</a>
                             <a href="#">Поддержка</a>
-                            <a href="#">Регистрация</a>
                         </div>
                     </div>
 
@@ -36,7 +37,9 @@
             <div class="header__nav">
                 <div class="nav__left">
                     <div class="nav__logo">
-                        <img src="Resources/Images/Sony_logo.svg" alt="sony" class="nav__logo__image">
+                        <a href="index.html">
+                            <img src="Resources/Images/Sony_logo.svg" alt="sony" class="nav__logo__image">
+                        </a>
                     </div>
                     <div class="nav__shop nav__left_style">
                         Наш магазин
@@ -73,52 +76,69 @@
             </div>
         </div>
         <div class="main">
-            <div class="main__headphone">
-                <img src="Resources/Images/man.webp" alt="man" class="main__headphone__image">
-                <div class="main__headphone__window">
-                    <div class="headphone__window__title main__headphone__window_text">НИКАКОГО ШУМА. <br>ТОЛЬКО ТЫ И ТВОЯ МУЗЫКА.</div>
-                    <div class="headphone__window__text main__headphone__window_text">В наушниках WH-1000XM4 можно погрузиться в мир музыки. Они оснащены интеллектуальной технологией, которая автоматически регулирует воспроизведение, чтобы обеспечить четкое звучание и минимизировать шумы.</div>
-                    <div class=" main__headphone__window_text">
-                        <button class="headphone__window__button">Подробнее о WH-1000XM4</button>
+            <div class="registration-window">
+                <div class="registration-window_top">
+                    <div class="registration-window__button-sign-in">
+
+                        <button class="sign-in registration-window__buttons">
+                            <input type="radio" name="reg" id="reg1" class="radiobut_1">
+                            <label for="reg1">
+                                <span class="sign-in__text">Войти</span>
+                            </label>
+                        </button>
+
                     </div>
-
-                </div>
-            </div>
-            <div class="main__products">
-                <div class="main__products__newest">
-                    <div class="main__products__newest__header text-header">Новые продукты</div>
-                    <div class="main__products__newest__tv">
-                        <div class="main__products__newest_style tv-1">
-                            <div class="tv-1__text">OLED, каким вы его еще не видели <i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
-
-                        </div>
-                        <div class="main__products__newest_style tv-2">
-                            <div class="tv-2__text">Впечатляющий реализм <br/> 8K благодаря живому интеллекту<i class="fas fa-chevron-right" style="font-size: 22px; margin-left: 5px;"></i></div>
-                        </div>
-                        <div class="main__products__newest_style tv-3">
-                            <a href="#">
-                                <div class="tv-3__text">Музыка вокруг вас<i class="fas fa-chevron-right" style="color: rgb(36, 36, 36); font-size: 22px; margin-left: 5px;"></i></div>
-                            </a>
-                        </div>
+                    <div class="registration-window__button-log-in">
+                        <button class="log-in registration-window__buttons">
+                            <input type="radio" name="reg" id="reg2" class="radiobut_2">
+                            <label for="reg2">
+                                <span class="log-in__text">Зарегистрироваться</span>
+                            </label>
+                        </button>
                     </div>
                 </div>
-                <div class="main__products">
-                    <div class="main__products__popular__header text-header">Популярные продукты</div>
-                    <div class="main__products__popular">
-                        <div class="grid-1 grid-1_text">Создай свой блог вместе с Sony</div>
-                        <div class="grid-2">
-                            <a href=#></a>
+                <div class="registration-window_bottom">
+                    <form enctype="multipart/form-data" class="main__form">
+                        <div class="first-part">
+                            <div class="main__form__email main__form__div">
+                                <label for="email">
+                                Email
+                            </label>
+                                <input type="email" name="email" id="email" required />
+                            </div>
+                            <div class="main__form__password main__form__div">
+                                <label for="password">
+                                Пароль
+                            </label>
+                                <input type="password" name="password" id="password" required/>
+                            </div>
+                            <div class="main__form__avatar main__form__div">
+                                <label for="avatar">
+                                Аватар
+                            </label>
+                                <input type="file" name="avatar" id="avatar" required/>
+                            </div>
+                            <div class="main__form__date-of-birth main__form__div">
+                                <label for="date">
+                                Дата рождения
+                            </label>
+                                <input type="date" name="dateOfBirth" id="date" required/>
+                            </div>
                         </div>
-                        <div class="grid-3">
-                            <a href=#></a>
+                        <div class="main__form__age main__form__div">
+                            <label for="age">
+                            Возраст
+                        </label>
+                            <input type="number" name="age" min="1" max="100" id="age" required/>
                         </div>
-                        <div class="grid-5">
-                            <a href=#></a>
-                        </div>
-                        <div class="grid-6">
-                            <a href=#></a>
-                        </div>
-                    </div>
+
+                        <button type="submit" class="main__form__send">
+                            <span class="on">Отправить</span>
+                        </button>
+                        <button type="reset" class="main__form__reset">
+                        <span class="on">Возобновить</span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -310,7 +310,6 @@ body {
 }
 
 .footer {
-    margin-top: 10px;
     background-color: #1f2024;
     height: 200px;
     transform-origin: bottom right;
@@ -471,6 +470,10 @@ body {
 
 .footer_community_link {
     text-decoration: none;
+}
+
+.footer_small {
+    min-width: 535px;
 }
 
 .footer_small__shop {

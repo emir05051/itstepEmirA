@@ -1,0 +1,154 @@
+html,
+body {
+    height: 100%;
+}
+
+label {
+    user-select: none;
+}
+
+.header_style {
+    min-height: 52px;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(Resources/Images/59b3c5cebb57f.jpg);
+    background-size: cover;
+    align-items: center;
+}
+
+.registration-window {
+    background-color: #212530;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex: 0 0 315px;
+    flex-direction: column;
+    font-family: 'Roboto', serif;
+    padding: 0 20px 10px 20px;
+    flex-wrap: nowrap;
+}
+
+.registration-window_top {
+    display: flex;
+}
+
+.registration-window_bottom {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=file] {
+    display: none;
+}
+
+.main__form__avatar {
+    margin-left: auto;
+}
+
+.sign-in input[type=radio]:checked {}
+
+.log-in input[type=radio]:checked {}
+
+.log-in {}
+
+.sign-in {}
+
+.main__form__send {
+    background-color: #b6b6c8;
+    border: none;
+    outline: none;
+}
+
+#email,
+#password,
+#avatar,
+#date,
+#age {
+    background-color: white;
+    border: none;
+    color: #2f353d;
+    padding: 5px;
+}
+
+.first-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__form__reset {}
+
+.sign-in__text,
+.log-in__text {
+    cursor: pointer;
+    padding: 3px;
+    outline: none;
+    /* border-bottom: 2px #5887f5 solid; */
+    border-bottom: 2px none solid;
+}
+
+.log-in:focus,
+.sign-in:focus {
+    outline: none;
+    border-bottom: 2px #5887f5 solid;
+}
+
+.registration-window__button-log-in,
+.registration-window__button-sign-in {
+    padding-bottom: 18px;
+    padding-top: 16px;
+    width: 50%;
+    text-align: center;
+}
+
+.registration-window__buttons {
+    background-color: #212530;
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    width: 100%;
+}
+
+.main__form__div {
+    margin: 2px 0 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__form__avatar {
+    display: flex;
+    justify-content: center;
+}
+
+.main__form__send,
+.main__form__reset {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    width: 49%;
+    text-align: center;
+}
+
+.main__form__send:focus,
+.main__form__reset:focus {
+    outline: blue 3px solid;
+}
+
+.on {
+    color: black;
+}
