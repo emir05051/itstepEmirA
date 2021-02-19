@@ -8,6 +8,7 @@ body,
 html {
     height: 100%;
     width: 100%;
+    line-height: 2;
 }
 
 h1 {
@@ -69,6 +70,9 @@ h1 {
     color: #04d4c8;
 }
 
+
+/* Вступительная часть */
+
 .intro {
     background-image: url(Resources/forest.jpg);
     background-repeat: no-repeat;
@@ -112,22 +116,34 @@ h1 {
     margin-top: 55px;
 }
 
+.intro__form {
+    display: flex;
+    justify-content: center;
+}
+
 .intro__button {
     border: none;
     background-color: transparent;
     color: #00e0d0;
     outline: #00e0d0 1px solid;
     padding: 10px;
-    margin-left: auto;
     width: 150px;
     height: 50px;
     user-select: none;
     font-weight: 700;
     font-size: 20px;
     cursor: pointer;
-    margin-left: 40%;
     margin-top: 20px;
 }
+
+
+/* Наша история  */
+
+
+/* Наша история  */
+
+
+/* Наша история  */
 
 .our__story {
     height: fit-content;
@@ -150,6 +166,7 @@ h1 {
     height: 300px;
     font-size: 40px;
     margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -159,22 +176,235 @@ h1 {
     filter: brightness(40%) grayscale(.75) blur(2px);
 } */
 
+
+/* Это кнопка для просмотра видео */
+
+
+/* Это кнопка для просмотра видео */
+
+
+/* Это кнопка для просмотра видео */
+
 .watch__our__story {
     position: relative;
     background-image: url(Resources/47e449698ddcf0fb78c8ce1771511624.jpg);
     background-size: cover;
+    background-blend-mode: darken;
     display: flex;
     justify-content: center;
     padding: 500px;
 }
 
 .watch__our__story__text {
-    min-height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch__our__story__text__sub {
     font-size: 70px;
-    color: #00e0d0;
+    color: #afafaf;
     align-self: center;
+    user-select: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fa-play-circle {
-    font-size: 40px;
+    font-size: 100px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.5s linear, color 0.3s linear;
+}
+
+.fa-play-circle:hover {
+    transform: scale(1.2);
+    color: rgb(194, 190, 190);
+}
+
+
+/* Чем занимается компания */
+
+
+/* Чем занимается компания */
+
+
+/* Чем занимается компания */
+
+.expertise {
+    padding: 50px;
+}
+
+.expretise__first {
+    display: flex;
+}
+
+.expertise__second {
+    display: flex;
+}
+
+.expertise__text {
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    min-width: 300px;
+    color: #666666;
+    font-family: 'Roboto', sans-serif;
+}
+
+.expertise__header {
+    color: #413d4b;
+}
+
+.expertise_center {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.expertise__logo {
+    font-size: 75px;
+    align-self: center;
+    color: #0dd5cf;
+}
+
+
+/* О нашей команде  */
+
+
+/* О нашей команде  */
+
+
+/* О нашей команде  */
+
+.our__team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #352d55;
+    padding: 50px;
+}
+
+.our__team__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our__team__header__top {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 5px 1px 5px black;
+}
+
+.our__team__header__bottom {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.our__team__list {
+    display: flex;
+}
+
+.our__team__number1,
+.our__team__number2,
+.our__team__number3,
+.our__team__number4 {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 10px -10px 4px rgb(0 0 0 / 50%);
+}
+
+
+/* 
+.our__team__number1__image,
+.our__team__number2__image,
+.our__team__number3__image,
+.our__team__number4__image {
+    width: 100%;
+} */
+
+.our__team__list__image {
+    width: 100%;
+    border: 2px black solid;
+}
+
+.our__team__list>div>div>p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.our__team__button {
+    padding: 20px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
+
+.our__team__button:hover {
+    background-color: #ccc;
+}
+
+.our__team__footer {
+    text-align: center;
+    color: #f1f1f1;
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+
+
+/* FOOTER */
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #aaaaaa;
+}
+
+.footer__logo {
+    font-family: 'Hanalei', cursive;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    text-decoration: none;
+    color: #f1f1f1;
+    align-self: center;
+}
+
+.social {
+    font-size: 30px;
+}
+
+@media(max-width:900px) {
+    .header__nav {
+        display: none;
+    }
+    .header__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .our__team__list>div>div>p {
+        font-size: 12px;
+    }
 }
