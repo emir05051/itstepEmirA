@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo</title>
+    <link rel="icon" href="Resources/Yin-yang.jpg" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="../fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="reg.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hanalei&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="header__logo">
+                <div class="logo">LEO</div>
+            </div>
+            <div class="header__nav">
+                <div class="header__nav__logo header__nav__text"><a href="index.html">Home</a></div>
+                <div class="header__nav__about header__nav__text">About</div>
+                <div class="header__nav__expertise header__nav__text">Expertise</div>
+                <div class="header__nav__teams header__nav__text">Teams</div>
+                <div class="header__nav__works header__nav__text">Works</div>
+                <div class="header__nav__people-say header__nav__text"><a href="blog.html">Статья</a></div>
+                <div class="header__nav__people-registration header__nav__text"><a href="reg.html">Регистрация</a></div>
+            </div>
+        </div>
+        <div class="registration">
+            <h4>
+                <span class="registration__header">Зарегистрироваться</span>
+            </h4>
+            <form class="registration__form" formmethod="get">
+                <div class="registration__email registration_style">
+                    <label for="email"><p class="name_of_input">Email</p></label>
+                    <input type="email" name="email" class="email input_style" tabindex="1" placeholder="example@example.com" id="email" required/>
+                </div>
+                <div class="registration__password registration_style">
+                    <label for="password"><p class="name_of_input">Пароль</p></label>
+                    <label class="password__before">
+                        <input type="password" name="password" class="password input_style" tabindex="2" placeholder="••••••" minlength="6" id="password" required/>
+                    </label>
+                </div>
+                <div class="registration__number registration_style">
+                    <label for="age"><p class="name_of_input">Возраст</p></label>
+
+                    <input type="number" name="number" class="number input_style" tabindex="3" min="5" max="100" placeholder="5-100" id="age" />
+
+                </div>
+                <div class="registration__text registration_style">
+                    <label for="text"><p class="name_of_input">Имя</p></label>
+                    <input type="text" name="text" class="text input_style" tabindex="4" id="text" />
+                </div>
+                <div class="registration__textarea registration_style">
+                    <label for="textarea"><p class="name_of_input">О себе</p></label>
+                    <textarea tabindex="5" class="textarea" id="textarea"></textarea>
+                </div>
+                <div class="registration__select">
+                    <select tabindex="6" class="select">
+                        <option class="select_name" disabled selected>Город</option>
+                        <option class="select_option" >Актау</option>
+                        <option class="select_option">Актобе</option>
+                        <option class="select_option">Атырау</option>
+                        <option class="select_option">Караганда</option>
+                        <option class="select_option">Кокшетау</option>
+                        <option class="select_option">Костанай</option>
+                        <option class="select_option">Кызылорда</option>
+                        <option class="select_option">Павлодар</option>
+                        <option class="select_option">Петропавловск</option>
+                        <option class="select_option">Талдыкорган</option>
+                        <option class="select_option">Тараз</option>
+                        <option class="select_option">Алматы</option>
+                        <option class="select_option">Нур-Султан/Астана</option>
+                    </select>
+                </div>
+                <div class="registration__checkbox">
+                    <p class="name_of_input">Пол</p>
+                    <div class="radiobuttons">
+                        <div class="man">
+                            <input type="radio" name="radio" class="radio" id="radio1" tabindex="7" />
+                            <label for="radio1">мужской</label>
+                        </div>
+                        <div class="woman">
+                            <input type="radio" name="radio" class="radio" id="radio2" />
+                            <label for="radio2">женский</label>
+                        </div>
+                        <div class="unknown">
+                            <input type="radio" name="radio" class="radio" id="radio3" />
+                            <label for="radio3">неопределенный</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="registration__button_send" tabindex="8">Отправить</button>
+                    <button type="reset" class="registration__button_reset" tabindex="9">Сбросить</button>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <a class="footer__logo">LEO</a>
+            <div class="social">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-google-plus-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

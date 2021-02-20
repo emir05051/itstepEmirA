@@ -46,14 +46,17 @@ h1 {
     user-select: none;
 }
 
-.header__logo:hover {}
-
 .header__nav {
     display: flex;
     justify-content: space-between;
     min-width: 677px;
     flex: 0 1 677px;
     flex-wrap: nowrap;
+}
+
+.header__nav__text>a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .header__nav__text {
@@ -391,8 +394,18 @@ h1 {
     align-self: center;
 }
 
+.our__team__footer>h2 {
+    cursor: pointer;
+    user-select: none;
+}
+
 .social {
     font-size: 30px;
+    user-select: none;
+}
+
+.social>i {
+    cursor: pointer;
 }
 
 @media(max-width:900px) {
@@ -407,4 +420,84 @@ h1 {
     .our__team__list>div>div>p {
         font-size: 12px;
     }
+    .expertise__mobile,
+    .expertise__made-love {
+        display: none;
+    }
+    .watch__our__story {
+        padding: 200px;
+    }
 }
+
+@media(max-width:425px) {
+    .intro {
+        padding: 100px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .header {
+        width: 425px;
+    }
+    .header__logo {
+        width: 425px;
+        display: flex;
+        justify-content: center;
+    }
+    .our__story {
+        min-width: 0;
+    }
+    .our__story__image {
+        display: none;
+    }
+    .expertise {
+        flex-direction: column;
+    }
+    .expretise__first {
+        flex-direction: column;
+    }
+    .expertise__second {
+        flex-direction: column;
+    }
+    .our__team {
+        width: 100%;
+    }
+    .our__team__list {
+        flex-direction: column;
+    }
+    .our__team__number1,
+    .our__team__number2,
+    .our__team__number3,
+    .our__team__number4 {
+        width: 100%;
+    }
+    .our__story__text {
+        height: fit-content;
+        max-width: 425px;
+    }
+    .our__team__list>div>div>p {
+        font-size: 12px;
+    }
+    .expertise__mobile,
+    .expertise__made-love {
+        display: none;
+    }
+    .watch__our__story {
+        padding: 100px;
+    }
+}
+
+@media(max-width:375px) {
+    .header {
+        width: 375px;
+    }
+}
+
+@media(max-width:320px) {
+    .header {
+        width: 320px;
+    }
+}
+
+
+/* width 100 % не работает  */
